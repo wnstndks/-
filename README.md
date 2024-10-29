@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 여기어때 - 숙소 추천 플랫폼
 
-## Getting Started
+## 소개
 
-First, run the development server:
+여기어때는 사용자에게 최적의 숙소를 추천하는 플랫폼입니다. 다양한 숙소 옵션과 사용자 리뷰를 통해 여행 계획을 쉽게 세울 수 있습니다. 우리는 사용자 친화적인 인터페이스와 실시간 예약 기능을 제공하여 편리한 여행 경험을 지원합니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 기능
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **숙소 검색**: 위치, 가격대, 시설 등을 기반으로 맞춤형 숙소 검색
+- **리뷰 및 평점**: 실제 사용자 리뷰를 통해 신뢰할 수 있는 정보 제공
+- **실시간 예약**: 숙소 예약을 간편하게 진행할 수 있는 시스템
+- **위치 기반 추천**: 사용자의 현재 위치에 따라 인근 숙소 추천
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 기술 스택
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **프론트엔드/백엔드**: Next.js
+- **데이터베이스**: MongoDB
+- **호스팅**: Vercel (Next.js 호스팅 최적화)
