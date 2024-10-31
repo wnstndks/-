@@ -3,15 +3,15 @@ import "../globals.css";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-3 bg-white shadow-md">
+    <header className="flex justify-between items-center p-3 bg-white shadow-md"
+    style={{padding:"20px"}}>
       <Link
         href="/"
         className="text-xl font-bold"
-        style={{ paddingLeft: "250px", paddingRight: "100px" }}
+        style={{ color:"red",fontWeight:"bolder",paddingLeft: "250px", paddingRight: "100px" }}
       >
         여기어때
       </Link>
-
       <div className="flex space-x-4">
       <Link
   href="/login"
