@@ -5,16 +5,28 @@ export default function Home() {
     <>
       {/* 상단 메인 비주얼 */}
       <section
-        className="relative w-full h-screen bg-cover bg-no-repeat flex items-center justify-center text-center text-white"
+      role="region"
+      aria-label="상단 메인 비주얼"
+      className="relative w-full h-[500px] overflow-hidden bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url('/img/image.png')`, // 이미지 경로 설정
+      }}
+    >
+      <div
         style={{
-          backgroundImage: `url('/img/image.png')`, // 이미지 경로
+          color: "white",
+          fontSize: "30px", // 단위 추가
+          padding: "100px", // 단위 추가
+          paddingLeft:"200px",
+          paddingTop:"150px",
+          fontWeight: "bolder",
         }}
       >
-        <div className="bg-black bg-opacity-40 p-8 rounded-md">
-          <h2 className="text-4xl font-bold mb-4">국내부터 해외까지</h2>
-          <p className="text-2xl">여행할 때 여기어때</p>
-        </div>
-      </section>
+        <span>국내부터 해외까지</span>
+        <br />
+        <span>여행할때 여기어때</span>
+      </div>
+    </section>
 
       {/* 추천 숙소 섹션 */}
       <section className="container mx-auto px-4 py-16">
@@ -58,19 +70,6 @@ export default function Home() {
             </div>
             {/* 추가적인 여행지 카드 */}
           </div>
-        </div>
-      </section>
-
-      {/* 하단 배너 섹션 */}
-      <section
-        className="relative w-full h-[300px] bg-cover bg-no-repeat flex items-center justify-center text-white"
-        style={{
-          backgroundImage: `url('/img/footer-banner.jpg')`, // 배경 이미지
-        }}
-      >
-        <div className="bg-black bg-opacity-40 p-8 rounded-md text-center">
-          <h3 className="text-2xl font-bold mb-2">여행할 때 여기어때</h3>
-          <p>국내외 다양한 숙소를 지금 확인해보세요.</p>
         </div>
       </section>
     </>
