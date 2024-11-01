@@ -142,7 +142,7 @@ export default function Home() {
       {/* 추천 숙소 섹션 */}
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold mb-8">이번주 HOT 인기 펜션</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* 카드 컴포넌트 */}
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <Image
@@ -157,7 +157,51 @@ export default function Home() {
               <p className="text-gray-600">₩120,000 / 1박</p>
             </div>
           </div>
-          {/* 추가 카드 */}
+          
+          {/* 추가 카드 2 */}
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <Image
+              src="/img/hotel-2.jpg" // 두 번째 예시 이미지
+              alt="추천 숙소 2"
+              width={400}
+              height={250}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">호텔 이름</h3>
+              <p className="text-gray-600">₩140,000 / 1박</p>
+            </div>
+          </div>
+          
+          {/* 추가 카드 3 */}
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <Image
+              src="/img/hotel-3.jpg" // 세 번째 예시 이미지
+              alt="추천 숙소 3"
+              width={400}
+              height={250}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">호텔 이름</h3>
+              <p className="text-gray-600">₩130,000 / 1박</p>
+            </div>
+          </div>
+          
+          {/* 추가 카드 4 */}
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <Image
+              src="/img/hotel-4.jpg" // 네 번째 예시 이미지
+              alt="추천 숙소 4"
+              width={400}
+              height={250}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">호텔 이름</h3>
+              <p className="text-gray-600">₩150,000 / 1박</p>
+            </div>
+          </div>
         </div>
       </section>
 
