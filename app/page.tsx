@@ -26,6 +26,21 @@ export default function Home() {
           <br />
           <span>여행할때 여기어때</span>
         </div>
+        <div
+          style={{
+            width:"70%",
+            display:"block",
+            marginLeft:"auto",
+            marginRight:"auto",
+            padding:"30px",
+            backgroundColor: "white", // 배경 색상 변경
+            borderRadius: "8px", // 모서리를 둥글게 만듦
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // 그림자 추가
+            
+          }}
+        >
+          여행지나 숙소를 검색해보세요.
+        </div>
       </section>
 
       <section className="container mx-auto px-4 py-16">
@@ -157,7 +172,7 @@ export default function Home() {
               <p className="text-gray-600">₩120,000 / 1박</p>
             </div>
           </div>
-          
+
           {/* 추가 카드 2 */}
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <Image
@@ -172,7 +187,7 @@ export default function Home() {
               <p className="text-gray-600">₩140,000 / 1박</p>
             </div>
           </div>
-          
+
           {/* 추가 카드 3 */}
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <Image
@@ -187,7 +202,7 @@ export default function Home() {
               <p className="text-gray-600">₩130,000 / 1박</p>
             </div>
           </div>
-          
+
           {/* 추가 카드 4 */}
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <Image
