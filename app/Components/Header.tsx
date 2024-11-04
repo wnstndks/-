@@ -14,7 +14,7 @@ export default function Header() {
       </Link>
       <div className="flex space-x-4">
       <Link
-  href="/login"
+  href="/Login"
   className="text-xs font-bold px-5 py-2 bg-white-300 text-white rounded"
   style={{ color: "black", marginLeft: "100px", marginRight: "250px" }}
 >
