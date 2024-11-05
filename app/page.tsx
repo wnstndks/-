@@ -14,11 +14,23 @@ export default function Home() {
        <section
       role="region"
       aria-label="숙소 검색"
-      className="relative flex flex-col items-center w-full h-[450px] overflow-hidden bg-cover bg-no-repeat"
+      className="relative flex flex-col items w-full h-[450px] overflow-hidden bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url('/img/image.png')`, // 이미지 경로 설정
       }}
     >
+      <div
+        style={{
+          color: "white",
+          fontSize: "30px",
+          fontWeight: "bolder",
+        }}
+      >
+        <span>국내부터 해외까지</span>
+        <br />
+        <span>여행할 때 여기어때</span>
+      </div>
+
       <div className="flex flex-col items-center bg-white bg-opacity-90 rounded-lg p-6 mt-32 w-3/4 max-w-4xl shadow-lg">
         {/* Tab 버튼 섹션 */}
         <div className="flex justify-center space-x-8">
