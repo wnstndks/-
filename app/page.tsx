@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Card from "./Components/Card";
 
 export default function Home() {
   return (
@@ -28,15 +29,14 @@ export default function Home() {
         </div>
         <div
           style={{
-            width:"70%",
-            display:"block",
-            marginLeft:"auto",
-            marginRight:"auto",
-            padding:"30px",
+            width: "70%",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            padding: "30px",
             backgroundColor: "white", // 배경 색상 변경
             borderRadius: "8px", // 모서리를 둥글게 만듦
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // 그림자 추가
-            
           }}
         >
           여행지나 숙소를 검색해보세요.
@@ -47,20 +47,11 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8">이벤트</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* 카드 컴포넌트 */}
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <Image
-              src="/img/hotel-1.jpg" // 예시 이미지
-              alt="추천 숙소 1"
-              width={400}
-              height={250}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-bold">호텔 이름</h3>
-              <p className="text-gray-600">₩120,000 / 1박</p>
-            </div>
-          </div>
-          {/* 추가 카드 */}
+          <Card
+            imageSrc="/img/hotel-1.jpg"
+            title="호텔 이름"
+            price="₩120,000 / 1박"
+          />
         </div>
       </section>
 
@@ -69,20 +60,11 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8">국내 인기 여행지</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* 카드 컴포넌트 */}
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <Image
-              src="/img/hotel-1.jpg" // 예시 이미지
-              alt="추천 숙소 1"
-              width={400}
-              height={250}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-bold">호텔 이름</h3>
-              <p className="text-gray-600">₩120,000 / 1박</p>
-            </div>
-          </div>
-          {/* 추가 카드 */}
+          <Card
+            imageSrc="/img/hotel-1.jpg"
+            title="호텔 이름"
+            price="₩120,000 / 1박"
+          />
         </div>
       </section>
 
@@ -159,19 +141,11 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8">이번주 HOT 인기 펜션</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* 카드 컴포넌트 */}
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <Image
-              src="/img/hotel-1.jpg" // 예시 이미지
-              alt="추천 숙소 1"
-              width={400}
-              height={250}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-bold">호텔 이름</h3>
-              <p className="text-gray-600">₩120,000 / 1박</p>
-            </div>
-          </div>
+          <Card
+            imageSrc="/img/hotel-1.jpg"
+            title="호텔 이름"
+            price="₩120,000 / 1박"
+          />
 
           {/* 추가 카드 2 */}
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
